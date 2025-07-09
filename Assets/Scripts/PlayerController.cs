@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
         Debug.Log(CheckGround());
         // move
         Movement();
-        
+
     }
 
     private void JUMP()
@@ -78,14 +78,18 @@ public class PlayerController : MonoBehaviour
     }
     void changeAnim(string animname)
     {
-        if(currentAnnim != animname)
+        if (currentAnnim != animname)
         {
             anim.ResetTrigger(animname);
             currentAnnim = animname;
             anim.SetTrigger(currentAnnim);
         }
     }
+    void haidang()
+    {
+        Debug.Log("demo git");
+    }
 
-    
+
 
 }
